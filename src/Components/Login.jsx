@@ -4,7 +4,6 @@ import Stack from '@mui/material/Stack';
 import {  useNavigate } from "react-router-dom";
 
 function Login() {
-
   const [name, setname] = useState({})
   const navigate= useNavigate()
   function submits(event) {
@@ -15,6 +14,7 @@ function Login() {
       navigate('/home')
     }else{
       alert('please enter valid email and password')
+      localStorage.setItem("loginSucces", false)
     }
   }
   function change(value,names){

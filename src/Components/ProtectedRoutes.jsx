@@ -6,9 +6,12 @@ const ProtectedRoutes = ({Component}) => {
     const navigate= useNavigate()
     
     useEffect(() => {
-        if(localStorage.getItem("loginSucces")==="false"){
+        if((!localStorage.getItem("loginSucces"))){
+          localStorage.setItem("loginSucces",false)
+        }
+        if((localStorage.getItem("loginSucces")==='false')){
             console.log(localStorage.getItem("loginSucces"))
-            navigate("/login")
+            navigate("/")
         }
     });
 

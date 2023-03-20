@@ -19,10 +19,10 @@ function App() {
       <Routes>
 
       <Route path='/login' element={<Login/>}/>
+      <Route path='/' element={<ProtectedRoutes Component =  {Login}/>}/>
       </Routes>
       <Navbar/>
       <Routes>
-      <Route path='/' element={<ProtectedRoutes Component =  {Home}/>}/>
       <Route path='/home' element={<ProtectedRoutes Component =  {Home}/>}/>
       <Route path='/products' element={ <ProtectedRoutes Component={Products} />}>
           <Route path='/products:category' element={ <ProtectedRoutes Component={Products} />}></Route>
