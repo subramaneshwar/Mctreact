@@ -1,0 +1,32 @@
+.nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: flex-end;
+    padding-right: 30px;
+    font-size: 1.4rem;
+}
+a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+}
+.buts{
+    border: none;
+    padding:.4rem .8rem;
+    border-radius: 10px;
+    background-color:gray ;
+    color: white;
+    margin-left:20px;
+    font-size: 1.4rem;
+}
+a:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.582);
+}
+.buts:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.582);
+}

@@ -1,0 +1,118 @@
+/* .maincont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}    */
+.left{
+    width: 50%;
+    height: 100vh;
+    padding: 10rem;
+}
+.maincont .para{
+    font-size: 1.5rem;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap:'30px'; */
+    /* padding-top: 20px; */
+}
+label{
+    padding:  10px 0;
+    font-weight: bolder;
+}
+.emi,.pass{
+    height: 30px;
+    background-color: rgb(234, 234, 246);
+    border: none;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+.text h1{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.checkbox{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.checks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check{
+    border: solid;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.butts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.submit{
+    padding: 10px 80px;
+    font-size: 1.2rem;
+    background-color: #d430b4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.reg{
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background-color: #d430b4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.bott {
+    font-size: 1rem;
+    text-align:center ;
+    padding-top: 30px;
+}
+.soc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color: #d430b4;
+}
+.right{
+    /* border: solid; */
+    width: 50%;
+    height: 100%;
+    background-image: url('https://media.istockphoto.com/id/865900408/vector/vector-landscape-with-green-silhouettes-of-coniferous-trees-in-the-mist.jpg?s=612x612&w=0&k=20&c=XWoHo4AKRrktwm5NK93oLoW2kImh1qiRmkW7gNcHcsY=');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px){
+    .maincont{
+        background-color: red;
+        width: 100%;
+        font-size: .8rem;
+    }
+    .right{
+        width: 0;
+        height: 0;
+    }
+    .left{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .soc{
+        padding: 5px 2px;
+    }
+}
